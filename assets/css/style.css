@@ -22,6 +22,19 @@ a:hover {
   text-decoration: none;
 }
 
+@font-face {
+  font-family: "FontAwesomeSolid";
+  font-weight: bold;
+  font-style: normal;
+  src : url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/webfonts/fa-solid-900.ttf") format("truetype");
+}
+
+a[target='_blank']::after {
+  content: ' \f35d';
+  font-family: "FontAwesomeSolid";
+  color: #1acc8d;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
 }
